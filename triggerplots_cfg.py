@@ -15,41 +15,57 @@ process.source = cms.Source("PoolSource",
 process.HLT_HT430_DelayedJet40_DoubleDelay1nsTracklessPlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPt" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTiming" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTiming","nCells"),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTiming","emEnergy"),
     triggerString = cms.string("HLT_HT430_DelayedJet40_DoubleDelay1nsTrackless")
 )
 process.HLT_HT430_DelayedJet40_DoubleDelay1nsInclusivePlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltCentralCaloJetptLowPtCollectionProducer" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingInclusive" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingInclusive","nCells"),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingInclusive","emEnergy" ),
     triggerString = cms.string("HLT_HT430_DelayedJet40_DoubleDelay1nsInclusive")
 )
 process.HLT_HT430_DelayedJet40_SingleDelay1nsTracklessPlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtSingle" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingle" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingle","nCells" ),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingle","emEnergy" ),
     triggerString = cms.string("HLT_HT430_DelayedJet40_SingleDelay1nsTrackless")
 )
 process.HLT_HT430_DelayedJet40_SingleDelay1nsInclusivePlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltCentralCaloJetptLowPtCollectionProducerSingle" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingleInclusive" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingleInclusive","nCells"),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingleInclusive","emEnergy"),
     triggerString = cms.string("HLT_HT430_DelayedJet40_SingleDelay1nsInclusive")
 )
 process.HLT_PFMET100_DelayedJet40_DoubleDelay1nsTracklessPlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPt" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTiming" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTiming","nCells"),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTiming","emEnergy"),
     triggerString = cms.string("HLT_PFMET100_DelayedJet40_DoubleDelay1nsTrackless")
 )
 process.HLT_PFMET100_DelayedJet40_DoubleDelay1nsInclusivePlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltCentralCaloJetptLowPtCollectionProducer" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingInclusive" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingInclusive","nCells" ),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingInclusive","emEnergy" ),
     triggerString = cms.string("HLT_PFMET100_DelayedJet40_DoubleDelay1nsInclusive")
 )
 process.HLT_PFMET100_DelayedJet40_SingleDelay1nsTracklessPlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtSingle" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingle" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingle","nCells" ),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingle","emEnergy" ),
     triggerString = cms.string("HLT_PFMET100_DelayedJet40_SingleDelay1nsTrackless")
 )
 process.HLT_PFMET100_DelayedJet40_SingleDelay1nsInclusivePlots = cms.EDAnalyzer('DataTimePlotsAnalyzer',
     jets = cms.InputTag( "hltCentralCaloJetptLowPtCollectionProducerSingle" ),
     jetTimes = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingleInclusive" ),
+    jetCells = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingleInclusive","nCells" ),
+    jetEmEnergy = cms.InputTag( "hltDisplacedHLTCaloJetCollectionProducerLowPtTimingSingleInclusive","emEnergy" ),
     triggerString = cms.string("HLT_PFMET100_DelayedJet40_SingleDelay1nsInclusive")
 )
 process.HLT_L1MET_DTCluster50Plots = cms.EDAnalyzer('DTPlotsAnalyzer',

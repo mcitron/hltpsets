@@ -11,6 +11,7 @@ process.load("TrackingTools/TransientTrack/TransientTrackBuilder_cfi")
 process.load("Configuration.Geometry.GeometryIdeal_cff")
 process.load("Configuration.StandardSequences.MagneticField_cff")
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
+process.load('Configuration.StandardSequences.Reconstruction_cff')
 
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag.globaltag = '120X_mcRun3_2021_realistic_v2'
@@ -20,7 +21,8 @@ options = VarParsing.VarParsing ('analysis')
 options.outputFile = 'dark_photon_m_10_ctau_5_xi_1.root'
 options.inputFiles = [
         # 'file:/home/users/mcitron/tsgGeneration/CMSSW_12_0_0_pre2/src/triggerOutputClean.root'
-      'file:/home/users/mcitron/tsgGeneration/CMSSW_12_0_0_pre2/src/output.root'
+      'file:/home/users/mcitron/tsgGeneration/output.root'
+      # 'file:/home/users/mcitron/outputFromCMSSW_12/output.root'
 ]
 options.maxEvents = 2000
 
