@@ -107,7 +107,9 @@ process.demo = cms.EDAnalyzer('DarkTimeAnalyzer',
                     addCaloCellBranches=cms.untracked.bool(False),
                     addTowerBranches=cms.untracked.bool(False),
                     era = cms.untracked.string(""),
-                    cleaningConfig = cleaningAlgoConfig
+                    cleaningConfig = cleaningAlgoConfig.
+                    barrelJets = cms.untracked.bool(True),
+                    endcapJets = cms.untracked.bool(False)
                    )
 process.demo.data=False
 process.demo.era="2018"
