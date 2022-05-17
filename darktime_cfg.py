@@ -116,7 +116,7 @@ process.demo.era="2018"
 
 process.demo.addCaloCellBranches=False
 if process.demo.addCaloCellBranches:
-    print "WARNING add calo cell bool is true - tree will be very large!"
+    print ("WARNING add calo cell bool is true - tree will be very large!")
 
 process.TFileService = cms.Service("TFileService",
                                                fileName = cms.string(options.outputFile)
