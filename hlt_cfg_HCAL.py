@@ -82325,7 +82325,7 @@ _customInfo['inputFiles'][True]  = "file:RelVal_Raw_GRun_DATA.root"
 _customInfo['inputFiles'][False] = "file:RelVal_Raw_GRun_MC.root"
 _customInfo['maxEvents' ]=  100
 _customInfo['globalTag' ]= "auto:phase1_2021_realistic"
-_customInfo['inputFile' ]=  ['file:TSG-Run3Summer21DRPremix-00024_12X.root']
+_customInfo['inputFile' ]=  ['file:/home/users/mcitron/tsgGenerationTemp/TSG-Run3Summer21DRPremix-00024_12X.root']
 # _customInfo['inputFile' ]=  ['/store/mc/Run3Summer21DRPremix/TT_TuneCP5_14TeV-powheg-pythia8/GEN-SIM-DIGI-RAW/120X_mcRun3_2021_realistic_v6-v2/2540000/b354245e-d8bc-424d-b527-58815586a6a5.root']
 _customInfo['realData'  ]=  False
 

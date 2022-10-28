@@ -31,7 +31,7 @@ process.maxEvents = cms.untracked.PSet(
 
 # Input source
 process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring('file:summer21Input.root'),
+    fileNames = cms.untracked.vstring('file:/ceph/cms/store/user/ryan/ProjectMetis/HTo2LongLivedTo4tau_MH-350_MFF-160_CTau-10000mm_privateMC_11X_RAWSIM_v1_generationForHLT/output_1.root'),
     secondaryFileNames = cms.untracked.vstring()
 )
 

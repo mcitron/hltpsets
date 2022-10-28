@@ -31,7 +31,7 @@ process.maxEvents = cms.untracked.PSet(
 
 # Input source
 process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring('/store/mc/Run3Winter21DRMiniAOD/HTo2LongLivedTo4b_MH-1000_MFF-450_CTau-10000mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW/FlatPU30to80FEVT_112X_mcRun3_2021_realistic_v16-v2/70000/00ceb736-0eb4-4b6f-8419-75e945c55237.root'),
+	fileNames = cms.untracked.vstring('file:summer21Input.root'),
     secondaryFileNames = cms.untracked.vstring()
 )
 
@@ -76,7 +76,7 @@ process.RECOSIMoutput = cms.OutputModule("PoolOutputModule",
         dataTier = cms.untracked.string('GEN-SIM-RECO'),
         filterName = cms.untracked.string('')
     ),
-    fileName = cms.untracked.string('file:TSG-Run3Winter21DRMiniAOD-00141.root'),
+    fileName = cms.untracked.string('file:TSG-Run3Summer.root'),
     outputCommands = process.RECOSIMEventContent.outputCommands+process.FEVTDEBUGEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
@@ -120,4 +120,4 @@ process = customiseLogErrorHarvesterUsingOutputCommands(process)
 from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEarlyDelete
 process = customiseEarlyDelete(process)
 # End adding early deletion
-print process.ecalMultiFitUncalibRecHit
+print (process.ecalMultiFitUncalibRecHit)

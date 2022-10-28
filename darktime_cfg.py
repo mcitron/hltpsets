@@ -21,8 +21,7 @@ options = VarParsing.VarParsing ('analysis')
 options.outputFile = 'dark_photon_m_10_ctau_5_xi_1.root'
 options.inputFiles = [
         # 'file:/home/users/mcitron/tsgGeneration/CMSSW_12_0_0_pre2/src/triggerOutputClean.root'
-      'file:/home/users/mcitron/tsgGeneration/output.root'
-      # 'file:/home/users/mcitron/outputFromCMSSW_12/output.root'
+      'file:/home/users/mcitron/tsgGenerationTemp/output.root'
 ]
 options.maxEvents = 2000
 
@@ -107,6 +106,8 @@ process.demo = cms.EDAnalyzer('DarkTimeAnalyzer',
                     addCaloCellBranches=cms.untracked.bool(False),
                     addTowerBranches=cms.untracked.bool(False),
                     era = cms.untracked.string(""),
+		    dataTier = cms.untracked.string("RAW"),
+		    triggerProcess = cms.untracked.string("HLTX"),
                     cleaningConfig = cleaningAlgoConfig,
                     barrelJets = cms.untracked.bool(True),
                     endcapJets = cms.untracked.bool(False)
