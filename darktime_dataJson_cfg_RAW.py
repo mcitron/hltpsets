@@ -125,7 +125,7 @@ process.demo = cms.EDAnalyzer('DarkTimeAnalyzer',
                     cleaningConfig = cleaningAlgoConfig,
                     barrelJets = cms.untracked.bool(True),
                     endcapJets = cms.untracked.bool(False),
-		    dataTier = cms.untracked.string("AOD"),
+		    dataTier = cms.untracked.string("RAW"),
 		    triggerProcess = cms.untracked.string("HLT"),
                    )
 
